@@ -17,7 +17,6 @@ export default {
   computed: {
     // バインドするスタイルを生成
     styles () {
-      console.log(this.color);
       return {
         '--color': this.color,
       }
@@ -32,6 +31,10 @@ export default {
   padding: 5px;
   width: 100%;
   margin: auto;
+  &:hover {
+    opacity: 0.6;
+    transform: translateY(0.1em);
+  }
 }
 img {
   width: 100%;

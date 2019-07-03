@@ -1,32 +1,12 @@
 <template>
   <div class="container">
     <div>
-      <img id="my-img" src="~/static/profile.jpg"/>
       <h1 class="title">
-        Daikids
+        Works
       </h1>
-      <h2 class="subtitle">
-        (un) official site
-      </h2>
-      <div class="social">
-        <SocialIcon
-          :title='"GitHub"'
-          :url='"https://github.com/daikikojima"'
-          :img="github_img"
-          color="#333"
-        />
-        <SocialIcon
-          :title='"Twitter"'
-          :url='"https://twitter.com/Daikids2"'
-          :img="twitter_img"
-          color="#55acee"
-        />
-        <SocialIcon
-          :title='"My Slides"'
-          :url='"https://speakerdeck.com/daikids2"'
-          :img="slides_img"
-          color="#ccc"
-        />
+      <div id="apps">
+        <h2 class="subtitle">App</h2>
+
       </div>
     </div>
   </div>
@@ -60,11 +40,6 @@
     text-align: center;
   }
 
-  #my-img {
-    height: 400px;
-    margin: auto;
-  }
-
   .title {
     font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -82,11 +57,4 @@
     word-spacing: 5px;
     padding-bottom: 15px;
   }
-
-  .social {
-    margin: auto;
-    display: flex;
-    width: 300px;
-  }
-
 </style>
