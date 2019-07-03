@@ -4,37 +4,31 @@
       <h1 class="title">
         Works
       </h1>
-      <div id="apps">
-        <h2 class="subtitle">App</h2>
-
-      </div>
+      <Apps/>
     </div>
+    <p>Google Play and the Google Play logo are trademarks of Google LLC.</p>
   </div>
 </template>
 
 <script>
-  import SocialIcon from '~/components/SocialIcon.vue'
-  import GitHubImage from '~/static/github.png'
-  import TwitterImage from '~/static/twitter.png'
-  import SlidesImage from '~/static/slides.svg'
+  import Apps from '~/components/Apps.vue'
+  import CharToHeader from '~/static/charto_header.png'
+
   export default {
     components: {
-      SocialIcon
+      Apps,
     },
     data() {
       return {
-        github_img: GitHubImage,
-        twitter_img: TwitterImage,
-        slides_img: SlidesImage
+        charto_header: CharToHeader,
       }
     }
   }
 </script>
 
-<style>
+<style lang="scss" scoped>
   .container {
     margin: 0 auto;
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
